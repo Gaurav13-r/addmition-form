@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="/javascript/index.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <title>Addmission form</title>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header>
+      <div id="logo">
+        <a href="https://ascn.kkwagh.edu.in/"><img src="/images/logo.png" /></a>
+      </div>
+      <div>
+        <h1>
+          K. K. WAGH ARTS, COMMERCE, SCIENCE ANS COMPUTER SCIENCE COLLAGE,
+        </h1>
+        <h1 id="city">NASHIK-422003</h1>
+        <p>AFFILIATED TO SAVITRIBAI PHULE PUNE UNIVERSITY</p>
+      </div>
+      <div id="grade">
+        <img src="/images/Bgrade.png" />
+      </div>
+    </header>
+    <main>
+      <section id="title">
+        <hr class="hr1" />
+        <h2>Admission form</h2>
+        <hr class="hr1" />
+      </section>
+      <section id="addmition">
+        <form id="application-form">
+          <section>
+            <h2 id="personal">Personal Information</h2>
+            <ul>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <label for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="firstname"
+                    maxlength="50"
+                    required
+                  />
+                </div>
+                <div class="text-counting">
+                  <span> <span id="fisrt-name-counting">50</span> /50</span>
+                </div>
+              </li>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <label for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lastname"
+                    maxlength="50"
+                    required
+                  />
+                </div>
+                <div class="text-counting">
+                  <span> <span id="last-name-counting">50</span> /50</span>
+                </div>
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </li>
+              <li>
+                <label for="number">Contact Number</label>
+                <input
+                  type="text"
+                  name="contact"
+                  id="number"
+                  maxlength="10"
+                  required
+                />
+              </li>
+              <li>
+                <label>Gender</label>
+                <ul id="gender">
+                  <li class="for-inline">
+                    <input type="radio" name="Gender" id="male" value="male" />
+                    <label for="male">Male</label>
+                  </li>
+                  <li class="for-inline">
+                    <input
+                      type="radio"
+                      name="Gender"
+                      id="female"
+                      value="female"
+                    />
+                    <label for="female">Female</label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <label for="d-birth">Date of birthdate</label>
+                <input type="date" name="dateofbirth" id="d-birth" required />
+              </li>
+            </ul>
+          </section>
+          <hr class="hr2" />
+          <section>
+            <h2>Address of Student</h2>
+            <ul>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <label for="address">Address</label>
+                  <textarea
+                    id="address"
+                    name="Address"
+                    maxlength="200"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-counting" id="text-area-count">
+                  <span> <span id="address-counting">200</span> /200</span>
+                </div>
+              </li>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <label for="city-student">City</label>
+                  <input
+                    type="text"
+                    name="cityname"
+                    maxlength="50"
+                    id="city-student"
+                    required
+                  />
+                </div>
+                <div class="text-counting">
+                  <span> <span id="city-counting">50</span> /50</span>
+                </div>
+              </li>
+              <li>
+                <label for="pincode">Pin Code</label>
+                <input type="text" name="pincode" id="pincode" required />
+              </li>
+              <li>
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" />
+              </li>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <label for="state-student">State</label>
+                  <input
+                    type="text"
+                    name="state"
+                    id="state-student"
+                    maxlength="50"
+                  />
+                </div>
+                <div class="text-counting">
+                  <span> <span id="state-counting">50</span> /50</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <hr class="hr2" />
+          <section>
+            <h2>Academic Information</h2>
+            <ul>
+              <li class="for-counting">
+                <div class="flex-content">
+                  <lable for="collage" id="clg">Junior Collage Name</lable>
+                  <input
+                    type="text"
+                    name="collagename"
+                    id="collage"
+                    maxlength="50"
+                    required
+                  />
+                </div>
+                <div class="text-counting">
+                  <span> <span id="collage-counting">50</span> /50</span>
+                </div>
+              </li>
+              <li>
+                <label for="Branch">Branch of 12th Std</label>
+                <select id="Branch" name="branch" required>
+                  <option value="science">Science</option>
+                  <option value="commerce">Commerce</option>
+                  <option value="art">Art</option>
+                </select>
+              </li>
+              <li>
+                <label for="percentage">Percentage of HSC</label>
+                <input
+                  type="number"
+                  name="percentage"
+                  id="percentage"
+                  required
+                />
+              </li>
+              <li>
+                <label for="passingyear">Year of Passing HSC</label>
+                <input
+                  type="number"
+                  name="yearofpassing"
+                  id="passingyear"
+                  required
+                />
+              </li>
+            </ul>
+          </section>
+          <hr class="hr2" />
+          <section>
+            <h2>Courses Applied for</h2>
+            <ul>
+              <li class="for-inline">
+                <input type="radio" name="courceapplied" id="bca" value="BCA" />
+                <label for="bca">BCA</label>
+              </li>
+              <li class="for-inline">
+                <input type="radio" name="courceapplied" id="bcs" value="BCS" />
+                <label for="bcs">BSc Computer Science</label>
+              </li>
+              <li class="for-inline">
+                <input
+                  type="radio"
+                  name="courceapplied"
+                  id="bsc-che"
+                  value="bsc-chemistry"
+                />
+                <label for="bsc-che">BSc Chemistry</label>
+              </li>
+              <li class="for-inline">
+                <input
+                  type="radio"
+                  name="courceapplied"
+                  id="bsc-micro"
+                  value="bsc-micro"
+                />
+                <label for="bsc-micro">BSc Microbiology</label>
+              </li>
+              <li class="for-inline">
+                <input
+                  type="radio"
+                  name="courceapplied"
+                  id="biotech"
+                  value="bsc-biotech"
+                />
+                <label for="biotech">BSc Biotech</label>
+              </li>
+              <li class="for-inline">
+                <input type="radio" name="courceapplied" id="bba" value="bba" />
+                <label for="bba">BBA</label>
+              </li>
+              <li class="for-inline">
+                <input
+                  type="radio"
+                  name="courceapplied"
+                  id="Bcom"
+                  value="Bcom"
+                />
+                <label for="Bcom">B.com</label>
+              </li>
+            </ul>
+          </section>
+          <hr class="hr2" />
+          <section id="btns">
+            <button type="reset">Clear</button>
+            <button type="submit" id="submit-btn">Submit</button>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <img src="images/kkwagh.jpg" alt="k k wagh" id="kkwagh" />
+        <div class="collage-info">
+          <img src="images/icon/location.png" alt="location" />
+          <p style="width: 400px">
+            K.K.Wagh Arts, Commerce, Science and Computer Science College,
+            Saraswati Nagar, Adgaon Road,Panchavati, Nashik - 422003.
+          </p>
+        </div>
+        <div class="collage-info">
+          <img src="images/icon/call.png" alt="call" />
+          <p>+91-253-2555111, 2555106, 2555115</p>
+        </div>
+        <div class="collage-info">
+          <img src="images/icon/email.png" alt="email" />
+          <p>principal-seniornashik@kkwagh .edu.in</p>
+        </div>
+      </section>
+      <section id="social-media">
+        <p>Follow on</p>
+        <a href="https://www.facebook.com/kkwagh77"
+          ><img src="images/icon/facebook.png" alt="facebook"
+        /></a>
+        <a href="https://www.youtube.com/channel/UCdxfNSRnFbW4pA2ikuj4PRw"
+          ><img src="images/icon/youtube.png" alt=""
+        /></a>
+      </section>
+    </footer>
+    <div id="pop-up">
+      <h2>Congratulations <span id="applicant-name">Name</span> ,</h2>
+      <p>Your application has been submitted successfully!</p>
+      <p>Thank you for choosing our college.</p>
+      <button id="ok-btn">OK</button>
+    </div>
+  </body>
+</html>
